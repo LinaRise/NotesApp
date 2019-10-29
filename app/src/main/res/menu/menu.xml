@@ -5,19 +5,19 @@
     <item
             android:id="@+id/addNote"
             android:icon="@drawable/baseline_note_add_black_18dp"
-            android:title="Add"
+            android:title="@string/add"
             app:showAsAction="always" />
     <item
             android:id="@+id/app_bar_search"
             app:actionViewClass="android.widget.SearchView"
             android:icon="@drawable/baseline_search_black_18dp"
-            android:title="Search"
+            android:title="@string/search"
             app:showAsAction="always" />
 
     <item
             android:id="@+id/exit"
             android:icon="@drawable/baseline_exit_to_app_black_18dp"
-            android:title="Exit"
+            android:title="@string/exit"
             app:showAsAction="always" />
 
 

@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        //чтобы при появлении клавиатуры она не прекрывала поля
+        <!--чтобы при появлении клавиатуры она не прекрывала поля-->
         <activity  android:windowSoftInputMode="adjustResize"
                 android:name=".SignInActivity">
             //чтобы при появлении клавиатуры она не прекрывала поля

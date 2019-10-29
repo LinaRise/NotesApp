@@ -1,10 +1,7 @@
 package com.nikak.linadom.notesapp
 
-import android.support.v7.app.AppCompatActivity
-import com.nikak.linadom.notesapp.SignInActivity
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 class SignInActivityTest {
 

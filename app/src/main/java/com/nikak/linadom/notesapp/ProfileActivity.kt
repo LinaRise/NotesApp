@@ -34,7 +34,7 @@ class ProfileActivity : AppCompatActivity() {
     fun loadQuery(title: String) {
 
 
-        var dbManager = DbManager(this)
+        val dbManager = DbManager(this)
         val projections = arrayOf("id", "title", "description")
         val selectionArgs = arrayOf(title)
         val cursor = dbManager.query(projections, "title like ?", selectionArgs, "title")

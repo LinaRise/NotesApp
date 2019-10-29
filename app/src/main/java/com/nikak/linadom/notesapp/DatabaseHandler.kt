@@ -108,7 +108,7 @@ class DatabaseHandler(context: Context) :
     }
 
 
-    fun checkIfLoginPresent(login: String):Boolean {
+    private fun checkIfLoginPresent(login: String):Boolean {
         val database = readableDatabase
         val projection = arrayOf(
             ID,
