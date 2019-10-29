@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/grey"
+     android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Title"
+                android:paddingLeft="10dp"
+                android:id="@+id/titleTv" android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="24dp"
+                android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+                android:paddingLeft="10dp"
+                android:text="content"
+                android:layout_width="match_parent"
+                android:id="@+id/contentTv" android:layout_weight="1" android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" android:layout_weight="1">
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_weight="1" android:layout_height="match_parent"/>
+            <ImageView
+                    android:layout_marginEnd="25dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/baseline_delete_black_18dp"
+                    android:id="@+id/deleteBtn" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/baseline_edit_black_18dp"
+                    android:id="@+id/editBtn" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

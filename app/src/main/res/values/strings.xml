@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestSubject2</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="authorization">Authorization</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_note">enter note</string>
+</resources>
