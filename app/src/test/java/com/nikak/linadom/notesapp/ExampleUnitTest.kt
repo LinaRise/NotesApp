@@ -1,5 +1,6 @@
 package com.nikak.linadom.notesapp
 
+import junit.framework.Assert.assertNotNull
 import org.junit.Test
 
 /**
@@ -8,8 +9,34 @@ import org.junit.Test
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
+    val activity: SignInActivity = SignInActivity()
+    var dbHandler: DatabaseHandler? = null
+
     @Test
-    fun checkOnClick() {
+    fun checkDBConnection() {
+        dbHandler = DatabaseHandler(activity)
+        assertNotNull(dbHandler)
 
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

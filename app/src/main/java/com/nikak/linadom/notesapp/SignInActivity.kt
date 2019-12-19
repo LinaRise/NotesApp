@@ -7,7 +7,6 @@ import android.view.animation.TranslateAnimation
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_sign_in.*
 import android.content.Intent
-import android.view.animation.Interpolator
 
 
 class SignInActivity : AppCompatActivity() {

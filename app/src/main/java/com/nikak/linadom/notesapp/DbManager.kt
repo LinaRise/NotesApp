@@ -35,7 +35,7 @@ class  DbManager(context: Context) {
             p0!!.execSQL(sqlCreateTable)
 //            context!!.deleteDatabase(dbName)
 
-            Toast.makeText(this.context, " database is created", Toast.LENGTH_LONG).show()
+//            Toast.makeText(this.context, " database is created", Toast.LENGTH_LONG).show()
 
         }
 

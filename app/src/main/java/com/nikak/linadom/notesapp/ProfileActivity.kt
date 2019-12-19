@@ -18,7 +18,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show()
+//        Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show()
 
         loadQuery("%")
 
@@ -58,12 +58,16 @@ class ProfileActivity : AppCompatActivity() {
     }
 
 
+    //поиск
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
 
+
+        //забираем из XML файла конфигурацию
         menuInflater.inflate(R.menu.menu, menu)
 
         val sv: SearchView = menu.findItem(R.id.app_bar_search).actionView as SearchView
 
+        //настройка поиска
         val sm = getSystemService(Context.SEARCH_SERVICE) as SearchManager
         sv.setSearchableInfo(sm.getSearchableInfo(componentName))
         sv.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -81,6 +85,11 @@ class ProfileActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
+
+    fun showAll(view: View) {
+        loadQuery("%")
+    }
+
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
 
